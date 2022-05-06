@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">AIHome</string>
+    <string name="StringValue">이미지가 열리지 않습니다.</string>
+    <string name="날씨">날씨</string>
+    <string name="temperature">온도</string>
+    <string name="humidity">습도</string>
+    <string name="uv">자외선</string>
+    <string name="dust_good">미세먼지</string>
+    <string name="home">Home</string>
+    <string name="alarm">알람설정</string>
+    <string name="graphs">Graph</string>
+    <string name="cctv">CCTV</string>
+    <string name="auto_mode">AI AUTO :</string>
+    <string name="off">OFF</string>
+    <!--activity_main.xml-->
+
+    <string name="ai_auto">AI AUTO</string>
+    <string name="alarm_set">알람 설정</string>
+    <string name="time_set">설정 시간</string>
+    <string name="Mon">월</string>
+    <string name="Tue">화</string>
+    <string name="Wed">수</string>
+    <string name="Thu">목</string>
+    <string name="Fri">금</string>
+    <string name="Sat">토</string>
+    <string name="Sun">일</string>
+    <string name="light">조명</string>
+    <string name="add">ADD</string>
+    <!--activity_alarm.xml-->
+
+    <string name="out_temperature">실외 온도</string>
+    <string name="out_humidity">실외 습도</string>
+    <string name="gas">가스</string>
+    <string name="boiler">온도 조절</string>
+    <string name="now_temperature">현재 온도</string>
+    <string name="con_temperature">설정 온도</string>
+    <string name="livingroom">거실</string>
+    <string name="room">방</string>
+    <string name="led">Light</string>
+    <string name="enter">현관</string>
+    <string name="fan">환풍기</string>
+    <string name="window">창문</string>
+    <!--activity_home.xml-->
+
+
+</resources>

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/edge"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/voice"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/home_title"
+        android:contentDescription="@string/StringValue" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edge"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="180dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/ai_auto"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switch1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edge"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/out_temperature"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/out_temp"
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="150dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/out_humidity"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/out_humid"
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="150dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/gas"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/in_gas"
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="150dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edge"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edge"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/boiler"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/temp_con_switch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="100dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/now_temperature"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="70dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/con_temperature"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/livingroom"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/living_temp"
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <EditText
+                android:id="@+id/liv_con_temp"
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="78dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:hint="온도 입력"
+                android:inputType="numberDecimal"
+                android:maxLength="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/room"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/room_temp"
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <EditText
+                android:id="@+id/room_con_temp"
+                android:layout_width="95dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="78dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:hint="온도 입력"
+                android:inputType="numberDecimal"
+                android:maxLength="4" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edge"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="100dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/livingroom"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/liv_led_switch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/led"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/room"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/room_led_switch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="100dp"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/enter"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/ent_led_switch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edge"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/fan"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/fan_switch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="220dp"
+                android:layout_marginEnd="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nanumgothicbold"
+                android:gravity="center"
+                android:text="@string/window"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/liv_window_switch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="220dp"
+                android:layout_marginEnd="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
